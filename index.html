@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu Example</title>
+    <style>
+        /* Style for the navigation bar */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Dropdown container */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* Dropdown button */
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 20px;
+            background-color: inherit;
+            cursor: pointer;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* Show dropdown on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Add hover effect to dropdown links */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropBox {
+          display:block;
+          flex-direction: column;
+          text-align: center;
+          width: 10%;
+          background-color: white;
+          border: none;
+        }
+
+        .dropBoxOptions {
+          background-color: blanchedalmond;
+          flex-direction: column;
+          
+        }
+
+        .dropBox button {
+          display:block;
+          background-color: white;
+          border: none;
+          background-color: blanchedalmond;
+        }
+         
+        .dropBox:hover .dropBoxOptions {
+           display: block; 
+        }
+        
+        
+        .show {
+            display: block;
+        }
+        .hide {
+            display: none;
+        }
+        .menuOptions:hover {
+            background-color: lightgrey;
+        }
+
+      #menuButton {
+        background-color: aqua;
+      }
+      
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn"        
+            >Dropdown Menu</button>
+            <div class="dropdown-content">
+                <a href="page1.html">Page 1</a>
+                <a href="page2.html">Page 2</a>
+                <a href="page3.html">Page 3</a>
+            </div>
+        </div>
+        
+    
+    
+    </div>
+    
+    <div class="dropBox">
+      <button
+      id="menuButton"
+      onclick="menuOption();"
+      >≡</button>
+      <div class="dropBoxOptions hide">
+         <button class="menuOptions">option1</button> 
+         <button class="menuOptions">option2</button> 
+         <button class="menuOptions">option3</button> 
+      </div>
+    </div>
+  <script>
+    /*
+    let box = document.querySelector(".dropBoxOptions");    
+    
+    document.addEventListener('click', function (event) {
+        console.log(box.classList)
+        if (box.classList[1] === "show") && (document.addEventListener("mouseleave")) {
+            
+            box.classList.add("hide");  
+            box.classList.remove("show");    
+            }
+        }
+);
+    
+    function menuOption() {        
+        document.querySelector(".dropBoxOptions").classList.toggle("hide");
+        document.querySelector(".dropBoxOptions").classList.toggle("show");
+    }
+*/
+    
+  </script>  
+</body>
+</html>
